@@ -1,0 +1,14 @@
+version: 1.0
+configuration:
+  has_webserver: true
+  scoring:
+    command: "node index.js"
+    files:
+      - unit.xml
+  ide_config:
+    default_open_files:
+      - index.js
+    project_menu:
+      run: node index.js
+      install: npm install
+      test: npm test
